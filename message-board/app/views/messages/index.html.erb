@@ -14,9 +14,10 @@
 
 <%= form_for(@message) do |f| %>
   名前:
-  <%= f.text_field :name %>
-
+  <%= f.text_area :name %>
+ 
   内容:
-  <%= f.text_field :body %>
-  <%= f.submit class: "btn btn-sm btn-primary" %>
+  <%= f.text_area :body %>
+  <%= f.submit class: "btn btn-sm btn-default" %>
+<span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
 <% end %>
